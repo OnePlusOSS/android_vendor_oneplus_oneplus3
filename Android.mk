@@ -63,6 +63,31 @@ LOCAL_SRC_FILES := etc/data/qmi_config.xml
 LOCAL_MODULE_OWNER := qti
 include $(BUILD_PREBUILT)
 
+include $(CLEAR_VARS)
+LOCAL_MODULE        := libaudioalsa
+LOCAL_MODULE_CLASS  := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_STRIP_MODULE  := false
+LOCAL_MULTILIB      := 64
+LOCAL_MODULE_OWNER  := qcom
+LOCAL_MODULE_TAGS   := optional
+LOCAL_SRC_FILES     := vendor/lib64/libaudioalsa.so
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/lib64
+LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE        := libaudioalsa
+LOCAL_MODULE_CLASS  := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_STRIP_MODULE  := false
+LOCAL_MULTILIB      := 32
+LOCAL_MODULE_OWNER  := qcom
+LOCAL_MODULE_TAGS   := optional
+LOCAL_SRC_FILES     := vendor/lib/libaudioalsa.so
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/lib
+LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_PREBUILT)
 
 $(shell rm -rf $(TARGET_OUT)/rfs/)
 
