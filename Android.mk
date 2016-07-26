@@ -89,6 +89,16 @@ LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/vendor/lib
 LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
+include $(CLEAR_VARS)
+LOCAL_MODULE        := dashd
+LOCAL_MODULE_CLASS  := EXECUTABLES
+LOCAL_MODULE_TAGS   := optional
+LOCAL_SRC_FILES     := sbin/dashd
+LOCAL_MODULE_PATH   := $(TARGET_ROOT_OUT_SBIN)
+LOCAL_FORCE_STATIC_EXECUTABLE := true
+LOCAL_UNSTRIPPED_PATH := $(TARGET_ROOT_OUT_SBIN_UNSTRIPPED)
+include $(BUILD_PREBUILT)
+
 $(shell rm -rf $(TARGET_OUT)/rfs/)
 
 $(shell mkdir -p $(TARGET_OUT)/rfs/msm/mpss/readonly)
