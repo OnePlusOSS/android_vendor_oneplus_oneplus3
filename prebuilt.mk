@@ -537,7 +537,6 @@ PRODUCT_COPY_FILES += vendor/oneplus/lib/modules/lcd.ko:system/lib/modules/lcd.k
 PRODUCT_COPY_FILES += vendor/oneplus/lib/modules/mmc_block_test.ko:system/lib/modules/mmc_block_test.ko
 PRODUCT_COPY_FILES += vendor/oneplus/lib/modules/mmc_test.ko:system/lib/modules/mmc_test.ko
 PRODUCT_COPY_FILES += vendor/oneplus/lib/modules/msm-buspm-dev.ko:system/lib/modules/msm-buspm-dev.ko
-PRODUCT_COPY_FILES += vendor/oneplus/lib/modules/qca_cld/qca_cld_wlan.ko:system/lib/modules/qca_cld/qca_cld_wlan.ko
 PRODUCT_COPY_FILES += vendor/oneplus/lib/modules/rdbg.ko:system/lib/modules/rdbg.ko
 PRODUCT_COPY_FILES += vendor/oneplus/lib/modules/spidev.ko:system/lib/modules/spidev.ko
 PRODUCT_COPY_FILES += vendor/oneplus/lib/modules/test-iosched.ko:system/lib/modules/test-iosched.ko
